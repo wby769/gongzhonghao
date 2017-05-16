@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>填写预定信息</title>
+	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="bookmark" href="favicon.ico"/>
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+	<link rel="stylesheet" type="text/css" href="https://res.wx.qq.com/open/libs/weui/1.1.1/weui.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/jj-style.css">
+	<script src="js/jquery.js" type="text/javascript"></script>
+	<script src="js/jquery-1.10.1.min.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="http://at.alicdn.com/t/font_qp1ovpuqvp5pnwmi.css">
+</head>
+<body>
+	<div class="divBox" style="padding-bottom:1.3rem">
+		<!-- 标题信息-->
+		<div class="jj_order-title box">
+			<h1 class="even-ellipsis">上海迪士尼乐园主题酒店+门票【家庭套票】【周末游精选】</h1>
+			<div class="title-item">
+				<p class="title-item-top odd-ellipsis">上海迪士尼乐园主题酒店</p>
+				<p class="title-item-info">豪华大床房 双早</p>
+				<p class="title-item-info">入住：2017-02-27 离店：2017-02-28</p>
+				<span>2间1晚</span>
+			</div>
+			<div class="title-item">
+				<p class="title-item-top odd-ellipsis">上海迪士尼成人票</p>
+				<p class="title-item-info">成人票</p>
+				<p class="title-item-info">游玩日期：2017-02-18</p>
+				<span>2张</span>
+			</div>
+		</div>
+		<!--联系人信息-->
+		<div class="jj-item-box box">
+			<!--标题-->
+			<p class="tlt">入住人信息</p>
+			<!--内容-->
+			<div class="weui-cells weui-cells_form" style="margin-top:10px">
+				<div class="ruzhu-content">
+					<div class="weui-cell">
+						<div class="weui-cell__hd"><label class="weui-label">入住人</label></div>
+						<div class="weui-cell__bd">
+							<input class="weui-input" type="text" placeholder="请输入姓名">
+						</div>
+						<div class="weui-cell_ft">
+							<i class="weui-icon-info-circle"></i>
+						</div>
+					</div>
+				</div>
+				<div class="weui-cell">
+					<div class="weui-cell__hd"><label class="weui-label">手机</label></div>
+					<div class="weui-cell__bd">
+						<input class="weui-input" type="text" placeholder="请输入手机号">
+					</div>
+					<div class="weui-cell_ft">
+						<i class="weui-icon-info-circle"></i>
+					</div>
+				</div>
+				<div class="weui-cell">
+					<div class="weui-cell__hd"><label class="weui-label">Email</label></div>
+					<div class="weui-cell__bd">
+						<input class="weui-input" type="text" placeholder="请输入邮箱">
+					</div>
+				</div>
+				<div class="weui-cell weui-cell_select weui-cell_select-after">
+					<div class="weui-cell__hd">
+						<label for="" class="weui-label">证件类型</label>
+					</div>
+					<div class="weui-cell__bd">
+						<select class="weui-select" name="select2" style="color:#999;padding-left:0;">
+							<option value="0">请输入证件类型</option>
+							<option value="1">身份证</option>
+							<option value="2">护照</option>
+							<option value="2">港澳通行证</option>
+							<option value="2">军人证</option>
+						</select>
+					</div>
+				</div>
+				<div class="weui-cell">
+					<div class="weui-cell__hd"><label class="weui-label">证件号码</label></div>
+					<div class="weui-cell__bd">
+						<input class="weui-input" type="text" placeholder="请输入证件号码">
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--游玩人-->
+		<div class="jj-item-box box" style="padding-bottom:.3rem">
+			<!--标题-->
+			<p class="tlt">游玩人</p>
+			<span class="add-ywr">
+                <a id="add-new-contact-btn" href="http://nbbc.66diqiu.com/ticket/book/choice_visitor?tid=1513&amp;vids=&amp;fuid=104390">
+                    添加游客 <i class="iconfont icon-tianjia" style="color:#3fdbea;"></i>
+                </a>
+            </span>
+			<!--内容-->
+			<div class="weui-cells weui-cells_form" style="margin-top:10px">
+				<div class="ruzhu-content">
+					<div class="weui-cell">
+						<div class="weui-cell__hd"><label class="weui-label">成人1</label></div>
+						<div class="weui-cell__bd">
+							<p><span style="color:red;">*</span> 柳柳</p>
+							<p>153589756481</p>
+						</div>
+					</div>
+					<div class="weui-cell">
+						<div class="weui-cell__hd"><label class="weui-label">成人2</label></div>
+						<div class="weui-cell__bd">
+							<p><span style="color:red;">*</span> 柳柳</p>
+							<p>153589756481</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--发票信息-->
+		<div class="jj-item-box box" style="padding:0">
+			<!--内容-->
+			<div class="weui-cells weui-cells_form fapiao-box" style="margin-top:0">
+				<div class="weui-cell weui-cell_switch">
+					<div class="weui-cell__bd fapiao-title">是否需要发票</div>
+					<div class="weui-cell__ft">
+						<input class="weui-switch" type="checkbox">
+					</div>
+				</div>
+				<div class="fapiao-content none">
+					<div class="weui-cell weui-cell_select weui-cell_select-after">
+						<div class="weui-cell__hd">
+							<label for="" class="weui-label">发票类型</label>
+						</div>
+						<div class="weui-cell__bd">
+							<select class="weui-select" style="padding-left:0;">
+								<option value="1">纸质发票</option>
+								<option value="2">电子发票</option>
+							</select>
+						</div>
+					</div>
+					<div class="weui-cell">
+						<div class="weui-cell__hd"><label class="weui-label">发票抬头</label></div>
+						<div class="weui-cell__bd">
+							<input class="weui-input" type="text" placeholder="个人发票">
+						</div>
+					</div>
+					<div class="weui-cell">
+						<div class="weui-cell__hd"><label class="weui-label">配送方式</label></div>
+						<div class="weui-cell__bd">
+							<input class="weui-input" type="text" placeholder="快递预付">
+						</div>
+					</div>
+					<div class="weui-cell">
+						<div class="weui-cell__hd"><label class="weui-label">收件人</label></div>
+						<div class="weui-cell__bd">
+							<input class="weui-input" type="text" placeholder="请输入收件人姓名">
+						</div>
+					</div>
+					<div class="weui-cell">
+						<div class="weui-cell__hd"><label class="weui-label">联系电话</label></div>
+						<div class="weui-cell__bd">
+							<input class="weui-input" type="text" placeholder="请输入联系电话">
+						</div>
+					</div>
+					<div class="weui-cell">
+						<div class="weui-cell__hd"><label class="weui-label">地址</label></div>
+						<div class="weui-cell__bd">
+							<input class="weui-input" type="text" placeholder="请输入地址">
+						</div>
+					</div>
+					<p class="xx-btm">配送费￥10将在您离店后3-5个工作日寄出</p>
+				</div>
+			</div>
+		</div>
+		<!--预定须知-->
+		<div class="jj-item-box box">
+			<!--标题-->
+			<p class="tlt">预定须知</p>
+			<!--内容-->
+			<div class="ydxz-content">
+				<p>上海迪士尼乐园主题酒店+豪华大床房</p>
+				<p>订单一经确认，不可修改，取消。若未按时入住，我们将扣除全额或部分房费。</p>
+			</div>
+		</div>
+    </div>
+	<!--提交订单-->
+	<div class="mask none" style="display: none;"></div>
+	<div class="sub-order-wrap">
+		<div class="weui-cells mingxi-box none" style="display: none;">
+			<div class="weui-cell">
+				<div class="weui-cell__bd">
+					<p>待支付</p>
+				</div>
+				<div class="weui-cell__ft" style="color:#3fdbea">￥18000</div>
+			</div>
+			<div class="weui-cell">
+				<div class="weui-cell__bd">
+					<p>房间（一间2晚）</p>
+				</div>
+				<div class="weui-cell__ft">￥17990</div>
+			</div>
+			<div class="weui-cell">
+				<div class="weui-cell__bd">
+					<p>快递发票费</p>
+				</div>
+				<div class="weui-cell__ft">￥10</div>
+			</div>
+		</div>
+		<div class="sub-order-box">
+			<p>待支付:<span>￥45612</span>
+			</p>
+			<span class="mingxi-btn">明细 <i class="iconfont icon-dd" style="font-size:12px"></i></span>
+			<div class="order-btn">
+				<a href="order-detail.html" id="showDialog">提交订单</a>
+			</div>
+		</div>
+	</div>
+	<script>
+        //    发票展示切换
+        $(".weui-switch").click(function(){
+            $(".fapiao-content").slideToggle();
+        })
+        //    价格明细
+        $(".mingxi-btn").click(function(){
+            $(".mingxi-box").slideToggle();
+            $(".mask").fadeToggle();
+        })
+        $(".mask").click(function(){
+            $(".mingxi-box").slideUp();
+            $(".mask").fadeOut();
+        })
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

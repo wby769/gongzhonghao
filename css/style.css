@@ -1,0 +1,410 @@
+/* 宿迁首页开始 */
+/* head */
+.headWrap{
+	position:relative;
+}
+/* 定位 */
+.headWrap .city{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	color: #666;
+	padding:.1rem .2rem;
+	font-size: .28rem;
+}
+.headWrap .city i{
+	/*vertical-align: middle;*/
+}
+.headWrap .city a{
+	color: #666;
+}
+.headWrap .city span{
+	margin-left:.1rem;
+}
+/* 轮播图 */
+.swiper-container{
+	width: 100%;
+	height:3.2rem;
+}
+.swiper-container img{
+	width:100%;
+	height:100%;
+}
+/*改变分页器颜色*/
+.swiper-pagination-bullet{
+	background:#bbb;
+	opacity:0.6;
+	width:20px;
+	height:5px;
+	border-radius:8px;
+}
+.swiper-pagination-bullet-active{
+	background:#409066;
+	opacity:1;
+}
+/* 导航菜单 */
+.navWrap{
+	width:100%;
+	padding:.25rem .2rem 0;
+	box-sizing:border-box;
+	overflow:hidden;
+	background:#fff;
+	margin-bottom:.3rem;
+}
+.navWrap ul li{
+	float:left;
+	width:25%;
+	text-align:center;
+	margin-bottom:.3rem;
+	font-size:.14rem;
+	color: #444;
+}
+.navWrap ul li a{
+	color:#333;
+}
+.navWrap ul li i{
+	font-size: .54rem;
+	margin-bottom:.05rem;
+	color: #0d723d;
+}
+.navWrap ul li p{
+	margin-top: .12rem;
+	font-size: .28rem;
+}
+/* 通用盒子 */
+.item-box{
+	width:100%;
+	background: #fff;
+	padding: .2rem;
+	box-sizing: border-box;
+	margin-bottom: .3rem;
+	overflow:hidden;
+}
+.item-box .title h1{
+	color: #333;
+	font-weight: normal;
+	font-size:.32rem;
+	margin-bottom: .2rem;
+	display: inline-block;
+}
+.item-box .title a{
+	float: right;
+	color: #666;
+	margin-top:1px;
+	font-size:.24rem;
+}
+/* 景区导览 */
+/* 百度地图链接及距离隐藏 */
+.anchorBL{
+	display: none;
+}
+/* 地图放大缩小 */
+.anchorBR{
+	display: none;
+}
+/* 精选推荐 */
+.choice-box{
+	padding: .2rem 0;
+}
+.choice-box .title{
+	margin-left: .2rem;
+}
+.choice-content{
+    padding:0 10px;
+    margin-bottom:5px;
+    overflow:hidden;
+    white-space:nowrap;
+    height:140px;
+    background:#fff;
+}
+.choice-content .choice-list{
+    width:133px;
+    height:140px;
+    box-sizing:border-box;
+    float: left;
+}
+.choice-content .choice-list img{
+	width: 100%;
+}
+/* 特色酒店 */
+.hotel-list{
+	position:relative;
+	overflow:hidden;
+	box-sizing:border-box;
+	border-bottom:1px solid #eee;
+	color:#333;
+	height:2.1rem;
+}
+.hotel-list:last-child{
+	border-bottom:0;
+}
+.hotel-list img{
+	width:2.51rem;
+	height:1.74rem;
+	position:absolute;
+	top:.18rem;
+	left:0;
+}
+.hotel-list-info{
+	width:100%;
+	box-sizing:border-box;
+	padding-left:2.7rem;
+	padding-top:.18rem;
+	position:relative;
+	height: 2.06rem;
+}
+.hotel-list-info h1{
+	font-size:.32rem;
+	line-height:.4rem;
+	font-weight:normal;
+}
+.hotel-list-info p{
+	color:#777;
+	font-size:.24rem;
+	margin:.06rem 0;
+}
+.hotel-list-info .type{
+	color:#444;
+}
+.hotel-list-info p i{
+	margin-right:.12rem;
+}
+.hotel-list-info .pingfen{
+	color:#0d723d;
+	font-size:.24rem;
+	position:absolute;
+	left:2.7rem;
+	bottom:.1rem;
+}
+.hotel-list-info .price{
+	color: #ff8800;
+	font-size:.36rem;
+	position:absolute;
+	right:0;
+	bottom:.06rem;
+}
+/* 传统美食 */
+.cate-list{
+	position: relative;
+	overflow: hidden;
+}
+.cate-list h1{
+	font-weight:normal;
+	color:#000;
+	font-size:.34rem;
+}
+.cate-list li{
+	box-sizing: border-box;
+	width:50%; 
+	float: left;
+	position: relative;
+	overflow: hidden;
+}
+.cate-list1{
+	height:2.2rem;
+	padding-top: .4rem;
+	border-right: 1px solid #eee;
+}
+.cate-list1 img{
+	position: absolute;
+	top:.55rem;
+	right: -0.06rem;
+	width: 1.44rem;
+}
+.cate-list1 p{
+	margin-top: .2rem;
+}
+.cate-list2,.cate-list3{
+	height:1.1rem;
+	padding-left: .2rem;
+	padding-top: .12rem;
+}
+.cate-list p{
+	color: #666;
+	font-size:.26rem;
+	line-height: .36rem;
+	width: 65%;
+	margin-top: .05rem;
+}
+.cate-list2 img,.cate-list3 img{
+	position: absolute;
+	right:0;
+}
+.cate-list2 img{
+	width: 1.5rem;
+	top:-.1rem;
+}
+.cate-list3 img{
+	width: 1.08rem;
+	top:.1rem;
+}
+.cate-list2{
+	border-bottom: 1px solid #eee;
+}
+/* 出行攻略 */
+.shopping-list{
+	position: relative;
+	overflow: hidden;
+}
+.shopping-list li{
+	box-sizing: border-box;
+	position: relative;
+	float: left;
+	overflow: hidden;
+}
+.shopping-list1{
+	border: 1px solid #eee;
+	height: 3.4rem;
+	margin-right: 3%;
+}
+.shopping-list1 img{
+	width: 3.48rem;
+}
+.shopping-list1-info{
+	padding-left: .1rem;
+}
+.shopping-list1-info h1{
+	font-size:.3rem;
+	font-weight:normal;
+	color:#000;
+	line-height: .48rem;
+}
+.shopping-list1-info p{
+	color:#666;
+	line-height: .26rem;
+}
+/*游览 评论*/
+.shopping-list1-info .cx-btm{
+	color: #666;
+}
+.cx-btm{
+	font-size: .24rem;
+	margin-right: .1rem;
+}
+.cx-btm span{
+	margin-left:.12rem;
+	line-height: .36rem;
+}
+.cx-btm i{
+	vertical-align:middle;
+}
+.shopping-list3{
+	width: 47%;
+	margin-bottom: .17rem;
+}
+.shopping-list3 img{
+	width:3.45rem;
+}
+.shopping-list3 .tt{
+	position: absolute;
+	background: rgba(255,255,255,0.4);
+	width: 2.45rem;
+	height: 1.03rem;
+	line-height:.38rem;
+	color: #000;
+	font-size: .26rem;
+	text-align: center;
+	top: 0;
+	left:0;
+	box-sizing:border-box;
+	padding-top:.2rem;
+	padding-left:.05rem;
+}
+.shopping-list3 .tt .cx-btm{
+	color:#000;
+}
+/* 发现好景 */
+.find-box{
+	padding: .2rem 0;
+}
+.find-box .title{
+	margin: 0 .2rem;
+}
+.find-list{
+	position: relative;
+	overflow: hidden;
+	height: 4.6rem;
+	width: 100%;
+}
+.find-list:last-child{
+	border-bottom: 0;
+	margin-bottom: 0;
+}
+.find-list img{
+	width:7.5rem;
+	height: 3.5rem;
+	margin-bottom: .1rem;
+}
+.find-list h1{
+	font-size: .32rem;
+	margin:0 .2rem;
+	width:78%;
+}
+.find-list p{
+	margin:0 .2rem;
+	color: #666;
+	font-size: .24rem;
+	line-height: .4rem;
+	width:78%;
+}
+.find-list .price{
+	position: absolute;
+	bottom: .31rem;
+	right:.26rem;
+	color: #ff8800;
+	width: 1.2rem;
+	height: .46rem;
+	line-height: .46rem;
+	text-align: center;
+	font-size: .36rem;
+}
+.find-list .icon-sc{
+	position: absolute;
+	bottom: 1.2rem;
+	right:.3rem;
+	font-size: .46rem;
+	color: #444;
+}
+/* 更多服务 */
+.more-box{
+	margin-bottom: .3rem;
+}
+.more-list{
+	position: relative;
+	overflow: hidden;
+}
+.more-list li{
+	float: left;
+	height: 1.2rem;
+	width: 1.4rem;
+    margin-right: .5rem;
+	box-sizing: border-box;
+	text-align: center;
+	padding-top: .1rem;
+	-webkit-border-radius:.05rem;
+	border-radius:.05rem;
+}
+.more-list li:last-child{
+	margin-right: 0;
+}
+.more-list li i{
+	font-size: .5rem;
+}
+.more-list li a p{
+	font-size: .24rem;
+	line-height: .4rem;
+}
+.more-list .more-list1{
+	background:#f5f5f5;
+}
+.more-list .more-list2{
+	background:#409066;
+}
+.more-list .more-list1 a{
+	color: #0d723d;
+}
+.more-list .more-list2 a{
+	color:#fff;
+}
+/* 宿迁首页结束 */

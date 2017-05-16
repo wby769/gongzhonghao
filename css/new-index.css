@@ -1,0 +1,408 @@
+/* 井冈山新首页开始 */
+
+/* head */
+.headWrap{
+	position:relative;
+	margin-bottom: .2rem;
+}
+/* 搜索 */
+.headWrap .search-box{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	color: #666;
+	padding:.1rem .2rem;
+	font-size: .28rem;
+	box-sizing: border-box;
+	padding-right:1.2rem;
+	padding-left:0.44rem;
+	padding-top:.1rem;
+	width: 100%;
+	z-index: 98;
+}
+.search-box .search-inp{
+	width: 100%;
+	height:.42rem;
+	border: 1px solid #333; 
+	border-radius:.1rem;
+}
+.search-box .search-inp input{
+	width:100%;
+	line-height:.42rem; 
+	background: transparent;
+	text-align: center;
+}
+/* 个人中心 */
+.headWrap .user-box{
+	position: absolute;
+	top:.08rem;
+	right: .3rem;
+	z-index: 99;
+	color: #333;
+}
+.headWrap .user-box i{
+	font-size: .46rem;
+}
+/* 轮播图 */
+.swiper-container{
+	width: 100%;
+	height:3.2rem;
+}
+.swiper-container img{
+	width:100%;
+	height:100%;
+}
+/*改变分页器颜色*/
+.swiper-pagination-bullet{
+	background:#fff;
+	opacity:0.8;
+	bottom: 5px !important;
+}
+.swiper-container-horizontal>
+.swiper-pagination-bullets{
+	bottom: 5px;
+}
+.swiper-pagination-bullet-active{
+	background:#409066;
+	opacity:1;
+}
+/* 导航菜单 */
+.navWrap{
+	width:100%;
+	padding:.25rem .2rem 0;
+	box-sizing:border-box;
+	overflow:hidden;
+	background:#fff;
+}
+.navWrap ul li{
+	float:left;
+	width:25%;
+	text-align:center;
+	margin-bottom:.3rem;
+	font-size:.14rem;
+	color: #444;
+}
+.navWrap ul li a{
+	color:#333;
+}
+.navWrap ul li img{
+	width: .7rem;
+	height: .7rem;
+}
+.navWrap ul li p{
+	margin-top: .04rem;
+	font-size: .28rem;
+}
+/* 新闻资讯滚动 */
+.scroll-box{
+	background: #fff;
+	height: 1.2rem;
+	position: relative;
+	width: 100%;
+	box-sizing: border-box;
+	padding:.2rem .2rem .2rem 1.2rem;
+	margin-bottom: .2rem;
+}
+.scroll-box img{
+	width: .94rem;
+	height: .71rem;
+	position: absolute;
+	top: .25rem;
+	left: .2rem;
+}
+#scrollDiv{
+	width:100%;
+	height:.8rem;
+	line-height:.4rem;
+	overflow:hidden;
+}
+#scrollDiv li{
+	height:.4rem;
+	padding-left:10px;
+	font-size: .24rem;
+}
+.scroll-content .tab{
+	border: 1px solid;
+	color:#ff7572; 
+	border-radius:2px;
+	margin-right: .1rem;
+	padding:0 2px;
+}
+/* 七个板块入口 */
+.item-all-box{
+	background: #fff;
+	margin-bottom: .2rem;
+	position:relative;	 
+}
+.item-all-box [class^="item-big-list"]{
+	width: 33.3%;
+	height:2.5rem;
+	float: left;
+	text-align:center;
+	border-right:1px solid #eee;
+	border-bottom:1px solid #eee;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-top:.2rem; 
+}
+.item-all-box .item-big-list3{
+	border-right: none;
+}
+.item-all-box [class^="item"] h1{
+	font-weight: normal;
+	font-size: .3rem;
+	color: #666;
+}
+.item-all-box [class^="item"] p{
+	font-size: .24rem;
+	margin:.1rem 0;
+}
+.item-all-box [class^="item-sm-list"]{
+	width: 25%;
+	height:2.5rem;
+	float: left;
+	text-align:center;
+	border-right:1px solid #eee;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-top:.2rem; 
+}
+.item-all-box .item-sm-list7{
+	border-right: none;
+}
+/* 盒子模块通用样式 */
+.group-item-box{
+	background: #fff;
+	margin-bottom:.2rem;
+	position: relative;
+}
+/* 标题 */
+.group-item-box .title{
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	padding:.2rem .15rem;
+}
+.group-item-box .title span{
+	display: inline-block;
+	border-left: 3px solid #ff7572;
+	font-size: .26rem;
+	padding-left:.1rem;
+	line-height:.26rem;
+}
+.group-item-box .title a{
+	color: #999;
+	font-size: .26rem;
+}
+.group-item-box .title a i{
+	font-size: .26rem;
+	vertical-align:text-top;
+}
+/* 精选推荐 */
+.tuijian-img img{
+	width:100% ;
+	height: 2rem;
+}
+.tuijian-fl-box{
+	background: #fff;
+}
+.tuijian-fl-box [class^="tuijian-fl"]{
+	width: 50%;
+	float: left;
+	text-align: center;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	padding:.2rem .25rem .1rem;
+	overflow: hidden;
+}
+.tuijian-img-l{
+	width:1.06rem;
+	float: left;
+	height: 1.64rem;
+	overflow: hidden;
+	margin-bottom: .1rem;
+}
+.tuijian-img-l img{
+	width: 1.06rem;
+	height: .78rem;
+	margin-bottom: .1rem;
+}
+.tuijian-img-r{
+	width: 2.04rem;
+	float: left;
+	height:1.64rem;
+	margin-bottom: .1rem;
+}
+.tuijian-img-r img{
+	width: 2.04rem;
+	height:1.64rem;
+}
+.tuijian-fl-box .tt{
+	font-size:.13rem;
+	color: #333;
+}
+.tuijian-fl-l1,.tuijian-fl-l3{
+	border-right:1px solid #eee;
+}
+.tuijian-fl-l1,.tuijian-fl-l2{
+	border-bottom:1px solid #eee;
+}
+.tuijian-fl-l1 .tuijian-img-l,
+.tuijian-fl-l3 .tuijian-img-l{
+	margin-right: .1rem;
+}
+.tuijian-fl-l2 .tuijian-img-r,
+.tuijian-fl-l4 .tuijian-img-r{
+	margin-right: .1rem;
+}
+/* 热门活动 */
+.hot-item-box{
+	text-align: center;
+}
+.hot-item-box .hot-list-big{
+	float: left;
+	width: 48%;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	border-right: 1px solid #eee;
+	height: 2.5rem;
+	border-top: 1px solid #eee;
+	padding-top: .25rem;
+}
+.hot-item-box .hot-list-big .img1{
+	width: 1.96rem;
+	height: 1.59rem;
+}
+.hot-item-box .hot-list-big .img2{
+	width: 2.02rem;
+	height: 1.75rem;
+}
+.hot-item-box .hot-list-sm{
+	float: left;
+	width: 26%;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	border-right: 1px solid #eee;
+	border-top: 1px solid #eee;
+	height: 2.5rem;
+	padding-top: .25rem;
+	overflow: hidden;
+}
+.hot-item-box .hot-list-sm img{
+	width: 1.16rem;
+	height: 1.16rem;
+	margin-bottom: .1rem;
+}
+.hot-item-box .tt{
+	font-size: .26rem;
+	line-height: .42rem;
+}
+/* 畅玩活动 */
+.no-bor-r{
+	border-right:0;
+}
+.play-item-box [class^="play-list"]{
+	width: 50%;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	padding:.2rem .2rem 0;
+	border-top:1px solid #f2f1f1;
+	border-right:1px solid #f2f1f1;
+	position: relative;
+	height: 3rem;
+	overflow: hidden;
+	float: left;
+}
+.play-list-top img{
+	width: 3.35rem;
+	height: 1.88rem;
+}
+.play-list-top p{
+	font-size: .24rem;
+	line-height: .5rem;
+	color: #333;
+}
+.price{
+	position:absolute;
+	right:.2rem;
+	bottom:0rem;
+	font-size: .18rem !important;
+	color: #999 !important;
+	line-height: .5rem !important;
+}
+.price span{
+	font-size: .3rem;
+	color:#ff756e; 
+}
+.play-list-btm img{
+	width: 1.52rem;
+	height: 1.52rem;
+	position: absolute;
+	top: .2rem;
+	left: .1rem;
+}
+.play-item-box .play-list-btm{
+	height: 1.95rem;
+	padding:.2rem .1rem 0;
+	padding-left:1.7rem;
+}
+.play-list-btm p{
+	font-size: .24rem;
+	line-height:.4rem;
+	color: #333;
+}
+/* 促销门票 */
+.play-item-box .play-list-ticket{
+	width: 33.3%;
+	height: 3.1rem;
+}
+.play-list-ticket img{
+	width: 100%;
+	height: 1.6rem;
+	margin-bottom: .1rem;
+}
+.play-list-ticket .tt{
+	line-height: .36rem;
+	font-size: .24rem;
+	color: #333;
+}
+/* 特惠酒店 */
+.hotel-list-box{
+	width: 100%;
+	position: relative;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	border-top: 1px solid #f2f1f1;
+	padding:.2rem .2rem .15rem;
+}
+.hotel-list-box img{
+	width: 100%;
+	height: 2.88rem;
+}
+.hotel-list-box .tt{
+	font-size: .26rem;
+	margin:.15rem 0;
+}
+.hotel-list-box .icon{
+	color: #999;
+}
+.hotel-list-box .icon i{
+	font-size: .28rem;
+	margin-right: .1rem;
+}
+/* 底部说明 */
+.foot-box{
+	width: 100%;
+	height: 1.3rem;
+	background:#dedede;
+	-webkit-box-sizing:border-box; 
+	box-sizing:border-box;
+	padding-top: .25rem;
+	text-align: center; 
+}
+.foot-box p{
+	color: #333;
+	font-size: .24rem;
+	margin-bottom:.1rem;
+}
+/* 井冈山新首页结束 */

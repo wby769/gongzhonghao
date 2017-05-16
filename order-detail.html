@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>订单详情</title>
+	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="bookmark" href="favicon.ico"/>
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+	<link rel="stylesheet" type="text/css" href="https://res.wx.qq.com/open/libs/weui/1.1.1/weui.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/jj-style.css">
+	<script src="js/jquery.js" type="text/javascript"></script>
+	<script src="js/jquery-1.10.1.min.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="http://at.alicdn.com/t/font_qp1ovpuqvp5pnwmi.css">
+</head>
+<body>
+	<div class="divBox" style="padding-bottom:.6rem">
+		<!-- 标题信息-->
+		<div class="jj_order-title box">
+			<p class="order-id">订单编号：2017022869542</p>
+			<h1 class="even-ellipsis">上海迪士尼乐园主题酒店+门票【家庭套票】【周末游精选】</h1>
+			<p class="order-id">下单时间：2017-2-28 12:30:45</p>
+			<div class="title-item">
+				<p class="title-item-top odd-ellipsis">上海迪士尼乐园主题酒店</p>
+				<p class="title-item-info">豪华大床房 双早</p>
+				<p class="title-item-info">入住：2017-02-27 离店：2017-02-28</p>
+				<span>2间1晚</span>
+			</div>
+			<div class="title-item">
+				<p class="title-item-top odd-ellipsis">上海迪士尼成人票</p>
+				<p class="title-item-info">成人票</p>
+				<p class="title-item-info">游玩日期：2017-02-18</p>
+				<span>2张</span>
+			</div>
+		</div>
+		<!--游玩人信息-->
+		<div class="order-detail-item">
+			<div class="title-full">
+				<p class="tlt">游玩人信息</p>
+			</div>
+			<div class="item-content box">
+				<p><label class="w3">取票人</label>：莎莎</p>
+				<p><label class="w2">电话</label>：13002501520</p>
+				<p><label class="w2">证件</label>：身份证</p>
+				<p><label class="w4">证件号码</label>：33256974258741255</p>
+			</div>
+			<div class="more-info none" style="display: none;">
+				<div class="item-content box">
+					<p><label class="w3">游玩人</label>：乔乔</p>
+					<p><label class="w2">电话</label>：13002501520</p>
+				</div>
+				<div class="item-content box">
+					<p><label class="w3">游玩人</label>：菲菲</p>
+					<p><label class="w2">电话</label>：18952636548</p>
+				</div>
+			</div>
+			<!--展开收起游玩人信息-->
+			<div class="cut-btn">
+				<a href="javascript:;" class="toggle-btn">
+					<span style="display: inline;">展开游玩人信息</span>
+					<span class="none" style="display: none;">收起游玩人信息</span>
+				</a>
+			</div>
+		</div>
+		<!--发票信息-->
+		<div class="order-detail-item">
+			<div class="title-full">
+				<p class="tlt">发票信息</p>
+				<a href="javascript:;" class="info-btn"><i class="iconfont icon-dd"></i></a>
+			</div>
+			<div class="item-content box none">
+				<p><label class="w4">发票类型</label>：纸质发票</p>
+				<p><label class="w4">发票抬头</label>：个人发票</p>
+				<p><label class="w4">配送方式</label>：快递预付</p>
+				<p><label class="w3">收件人</label>：张某</p>
+				<p><label class="w4">联系电话</label>：13051626555</p>
+				<p><label class="w2">地址</label>：江苏南京鼓楼区紫峰大厦</p>
+			</div>
+		</div>
+		<!--预定须知-->
+		<div class="order-detail-item">
+			<div class="title-full">
+				<p class="tlt">预定须知</p>
+				<a href="javascript:;" class="info-btn"><i class="iconfont icon-dd"></i></a>
+			</div>
+			<div class="item-content box none">
+				<p>上海迪士尼乐园主题酒店+豪华大床房</p>
+				<p>订单一经确认，不可修改，取消。若未按时入住，我们将扣除全额或部分房费。</p>
+			</div>
+		</div>
+		<!--订单金额-->
+		<div class="order-detail-item">
+			<div class="title-full">
+				<p class="tlt">订单金额</p>
+			</div>
+			<div class="item-content box">
+				<p><label class="w4">订单金额</label><span>￥75.00</span></p>
+				<p><label class="w3">代金券</label><span>￥0</span></p>
+				<p><label class="w4">应付金额</label><span class="rr">￥75.00</span></p>
+			</div>
+		</div>
+		<!--按钮-->
+		<div class="order-detail-btn">
+			<a href="#" class="weui-btn weui-btn_primary">立即支付</a>
+			<a href="#" class="weui-btn weui-btn_plain-primary cancel-order">取消订单</a>
+		</div>
+    </div>
+	<script>
+        //    展开收起游玩人
+        $(".toggle-btn").click(function(){
+            $(".more-info").slideToggle();
+            $(this).find("span").toggle();
+        })
+		//    发票信息与预定须知
+		$(".info-btn").click(function(){
+		    $(this).parent().next(".item-content").slideToggle();
+		    $(this).find("i").toggleClass("i-toggle");
+		})
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
