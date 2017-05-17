@@ -26,8 +26,6 @@
 				<a href="city.html" class="place">
 					<i class="iconfont icon-shape3"></i> 宿迁
 				</a>
-				<!--<span class="today"></span>-->
-				<!--<span>晴 3~15℃</span>-->
 				<span id="sj"></span>
 				<span id="weather">
 					<img width="16px" height="16px" src="">
@@ -484,12 +482,12 @@
 
 
         function findWeather() {
-            var cityUrl = 'http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js';
+            var cityUrl = 'https://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js';
             $.getScript(cityUrl, function (script, textStatus, jqXHR) {
                 var citytq = remote_ip_info.city; // 获取城市
 				var place=$(".place").text().trim();
                 citytq = place;
-                var url = "http://php.weather.sina.com.cn/iframe/index/w_cl.php?code=js&city=" + citytq + "&day=0&dfc=3";
+                var url = "https://php.weather.sina.com.cn/iframe/index/w_cl.php?code=js&city=" + citytq + "&day=0&dfc=3";
                 $.ajax({
                     url: url,
                     dataType: "script",
