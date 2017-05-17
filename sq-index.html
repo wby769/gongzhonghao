@@ -27,7 +27,7 @@
 					<i class="iconfont icon-shape3"></i> 宿迁
 				</a>
 				<span id="sj"></span>
-				<span id="weather">
+				<span id="weather" class="none">
 					<img width="16px" height="16px" src="">
 				</span>
 			</div>
@@ -440,7 +440,7 @@
     </div>
 	<script>
 	
-//		天气预报
+	//天气预报
         function findWeather() {
             var cityUrl = 'https://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js';
             $.getScript(cityUrl, function (script, textStatus, jqXHR) {
