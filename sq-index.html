@@ -27,7 +27,7 @@
 					<i class="iconfont icon-shape3"></i> 宿迁
 				</a>
 				<span id="sj"></span>
-				<span id="weather" class="none">
+				<span id="weather">
 					<img width="16px" height="16px" src="">
 				</span>
 			</div>
@@ -439,8 +439,11 @@
 	    </div>
     </div>
 	<script>
-	
 	//天气预报
+	 var date=new Date();
+     	var today=date.getMonth()+1+"月"+date.getDate()+"日";
+     	$(".today").text(today);
+		
         function findWeather() {
             var cityUrl = 'https://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js';
             $.getScript(cityUrl, function (script, textStatus, jqXHR) {
